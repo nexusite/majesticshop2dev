@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta htt-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"/>
+    <title>Responsive Navbar</title>
+</head>
+<body>
+   <header>
+    <div class="navbar">
+        <div class="logo"><a href="#"> Majestic Shop</a></div>
+        <ul class="links">
+        <li><a href="hero"> Home </a></li>   
+        <li><a href="acquista.html"> Acquista </a></li>    
+        <li><a href="services"> Chi Siamo </a></li>    
+        <li><a href="contact"> Discord </a></li>  
+        </ul>
+        <a href="#" class="action_btn">Assistenza</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <a href="#" class="login_page"> Login </a>
+
+        </div>
+        </div>
+        </div>
+
+          <div class="dropdown_menu">
+              <li><a href="hero"> Home </a></li>    
+           <li><a href="about"> Acquista </a></li>    
+           <li><a href="services"> Chi Siamo </a></li>    
+            <li><a href="contact"> Discord </a></li>  
+              <li><a href="#" class="action_btn"> Assistenza </a></li>
+              <li><a href="#" class="login_page"> Login </a></div></li>
+
+         
+           </header>
+           
+           <main>
+               <section id="hero">
+                   <h1> Felici di Averti Qui!</h1>
+                   <p>
+                       La tua Felicità è la nostra priorità N.1
+                   </p>
+               </section>
+           </main>
+           
+           <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+    
+    toggleBtn.onclick = function(){
+        dropDownMenu.classList.toggle('open')
+        const isOpen=dropDownMenu.classList.contains('open')
+        
+        toggleBtnIcon.classList = isOpen
+        ?'fa-solid fa-xmark'
+        :'fa-solid fa-bars'
+    }
+
+    </script>
+    </body>
+           </html>
